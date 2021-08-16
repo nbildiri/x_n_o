@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".33" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".66" />
+
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toEndOf="@+id/guideLeft"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toTopOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toStartOf="@id/guideRight"
+        app:layout_constraintStart_toStartOf="@id/guideLeft"
+        app:layout_constraintBottom_toTopOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideRight"
+        app:layout_constraintBottom_toTopOf="@+id/button5"/>
+
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toStartOf="@id/guideLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/playerOneScore"/>
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toStartOf="@id/guideRight"
+        app:layout_constraintStart_toStartOf="@id/guideLeft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/playerOneScore" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideRight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/playerOneScore"/>
+
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toStartOf="@id/guideLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toStartOf="@id/guideRight"
+        app:layout_constraintStart_toStartOf="@id/guideLeft"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/ticTacToeButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+
+    <TextView
+        android:id="@+id/playerOne"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:text="@string/team_x"
+        app:layout_constraintBottom_toTopOf="@id/reset"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/statusTv"
+        />
+
+    <TextView
+        android:id="@+id/playerOneScore"
+        android:text="@string/team_x_score"
+        app:layout_constraintBottom_toTopOf="@id/reset"
+        app:layout_constraintStart_toEndOf="@id/playerOne"
+        style="@style/statusTv" />
+
+
+    <TextView
+        android:id="@+id/playerTwo"
+        android:text="@string/team_o"
+        app:layout_constraintBottom_toTopOf="@id/reset"
+        app:layout_constraintEnd_toStartOf="@id/playerTwoScore"
+        style="@style/statusTv" />
+
+    <TextView
+        android:id="@+id/playerTwoScore"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:text="@string/team_o_score"
+        app:layout_constraintBottom_toTopOf="@id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/statusTv" />
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/secondaryColor"
+        android:shadowDx="3"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

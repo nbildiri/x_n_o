@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="Theme.XnO" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondaryVariant</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">?attr/colorSecondaryVariant
+        </item>
+
+
+        <item name="colorAccent">@color/secondaryColor</item>
+
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.XnO.NoActionBar.Dialog"
+
+        parent="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+
+        <item name="colorAccent">@color/secondaryColor</item>
+
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/secondaryDarkColor
+        </item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/secondaryDarkColor
+        </item>
+    </style>
+
+
+    <style name="Theme.XnO.NoActionBar.SplashScreenTheme">
+        <item name="android:background">@drawable/background</item>
+        <item name="android:foreground">@mipmap/splash_background_foreground</item>
+
+    </style>
+    <style name="Theme.XnO.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.XnO.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:fontFamily">@font/austin</item>
+    </style>
+
+    <style name="Theme.XnO.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+</resources>

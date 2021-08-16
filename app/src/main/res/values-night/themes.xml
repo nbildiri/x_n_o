@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="DefaultBackgroundColor">@color/SecondaryTextColoredColor</color>
+
+    <color name="PrimaryTextColoredColor">@color/primaryTextColor</color>
+    <color name="SecondaryTextColoredColor">@color/primaryColor</color>
+
+    <color name="BackgroundColoredColor">@color/secondaryColor</color>
+    <color name="secondaryLightColor">#C8C2C8</color>
+    <color name="secondaryColor">#F1E7F3</color>
+
+    <color name="primaryColor">#928095</color>
+
+</resources>
